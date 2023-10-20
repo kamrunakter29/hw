@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ol,ul{
+    list-style: none;
+}
+nav{
+    border-bottom:1px solid #ccc;
+    background-color:white;
+    
+
+
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+    
+}
+nav ul li a{
+    display:block;
+    padding:15px 35px;
+
+}
+nav ul li:hover a{
+    color:black;
+
+}
+a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #424949;
+    font-size:small;
+
+
+}
+.title a{
+    text-transform: capitalize;
+    color:red;
+    font-size: xx-large;
+    text-align: left;
+    font-family: 'Teko', sans-serif;
+}
+.submenu{
+    width:250px;
+    position: absolute;
+    background-color:white ;
+    border:1px solid #ccc;
+    border-radius:10px;
+    opacity:0;
+    visibility: hidden;
+    display: inline-block;
+    text-align: left;
+    font-family:arial;
+    transform:0.5s;
+
+
+}
+.submenu a{
+    color:black;
+    font-size: medium;
+}
+nav ul li:hover >.submenu{
+    opacity:1;
+    visibility: visible;
+    margin:0;
+
+}
+.submenu a:hover{
+    background-color: #E5E7E9;
+}
+.submenu li{
+    display:block;
+}
+.submenu .submenu{
+    left:100%;
+    top:0;
+}
+.button{
+    border:1px solid #ccc;
+    border-radius:20px;
+}
+.button:hover a{
+    background-color:red;
+    color:white;
+    border-radius:20px;
+}
